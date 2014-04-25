@@ -18,4 +18,8 @@ solution = catch(:trpl) do
   end
 end
 
-puts solution
+if solution.class == Range
+  puts "No solution found in range 1..#{max_count}. Increase max_count!"
+else
+  puts solution
+end
