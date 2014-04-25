@@ -8,10 +8,7 @@ Find the difference between the sum of the squares of the first one hundred natu
 =end
 
 max = 100
-
 sum_of_squares = (1..max).inject(0) {|sum, i| sum + (i ** 2)}
 square_of_sums = (1..max).inject(0) {|sum, i| sum + i} ** 2
-
-puts "sum_of_squares is #{sum_of_squares}"
-puts "square_of_sums is #{square_of_sums}"
-puts "difference is #{square_of_sums - sum_of_squares}"
+diff = square_of_sums - sum_of_squares
+puts "difference is #{diff}"
