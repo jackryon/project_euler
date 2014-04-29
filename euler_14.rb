@@ -24,7 +24,6 @@ def collatz_sequence_length i, known_sequence_lengths
   length += 1
 end
 
-start_time = Time.now
 known_lengths = []
 longest_seq = 0
 longest_seq_start = 0
@@ -36,7 +35,4 @@ longest_seq_start = 0
   end
 end
 
-puts longest_seq
 puts longest_seq_start
-puts "executed in #{Time.now - start_time} sec"
-#puts data.inspect
